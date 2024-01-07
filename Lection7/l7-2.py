@@ -8,6 +8,7 @@
 да премахва двете най-големи и двете най-малки стойности. Да се принтира новият
 списък, както и оригиналният. Програма трябва да генерира подходящо съобщение за
 грешка, ако потребителят въведе по-малко от 4 стойности.'''
+
 #define how many numbers
 n = int(input('Enter a number: '))
 #n has to be positive and > 4
@@ -17,13 +18,13 @@ if n <= 4:
 #create list
 lst = []
 for i in range(n):
-    num = int(input('Write a number and press enter: '))
+    num = int(input('Enter a number: '))
     lst.append(num)
 lst.sort()
 print('Original list: ',lst)
+#del lst[:2]
+#del lst[-2:]
 lst_copy = lst.copy()
+lst_copy = lst_copy[2:-2]
 print('New list: ',lst_copy)
-del lst[:2]
-del lst[-2:]
-print(lst_copy)
 
