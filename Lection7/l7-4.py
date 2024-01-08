@@ -17,13 +17,10 @@ for user_input in range(n):
     #if user input is digit add to list
     if user_input >0:
         lst_pozitive.append(user_input)
-        continue
     elif (user_input) <0:
         lst_negative.append(user_input)
-        continue
     elif (user_input) == 0:
         lst_zero.append(user_input)
-        continue
     else:
         print('Please enter a real number integer: ')
 print(*(lst_negative + lst_zero + lst_pozitive), sep=',')
