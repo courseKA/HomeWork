@@ -13,4 +13,11 @@ numbers = []
 #create list of 6 random numbers
 for i in range (6):
     numb = random.randint(1,49)
-    
+    #if the number repeats, generate new number
+    if numb in numbers:
+        numb=random.randint(1,49)
+    numbers.append(numb)
+print(*numbers)
+#find weather guessed
+duplicates = set(lottery_numbers) & set(numbers)
+print('You guessed: ', duplicates)
