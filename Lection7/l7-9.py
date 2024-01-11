@@ -2,6 +2,12 @@
 извежда на конзолата във форматиран вид. Размерът на матриците се въвежда от
 конзолата. Пример за (4,4):'''
 
+for i in range(1,5):
+    for h in range(i, i + 13, 4):
+        print(h, end=' ')
+    print()
+print('=' * 30)
+
 for i,j,m,l in zip(range(1,6), range(5,10),range(9,14), range(13,17)):
  
     print(f'{i}\t{j}\t{m}\t{l}')
