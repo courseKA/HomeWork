@@ -1,0 +1,15 @@
+import sys
+import os
+import time
+from PyQt6 import QtWidgets as qtw
+from PyQt6 import QtCore as qtc, QtGui as qtg
+
+class MainApp():
+    def __init__(self):
+        app = qtw.QApplication(sys.argv)
+        main = qtw.QWidget()
+        main.setWindowTitle("Login Form")
+        main.show()
+        sys.exit(app.exec())
+
+claass 
