@@ -6,9 +6,6 @@ a =  5 #int(input('Enter digit: '))
 b =  3#int(input('Enter digit: '))
 
 if a > b:
-    c = a 
-    a = b
-    b = c
-    print(a, b)
+ 
 a,b = b, a
 print(a, b)
