@@ -4,7 +4,7 @@
 
 a = 5
 b = 10
-c = b
-b = a
-a = c
+
+b,a = a,b
+
 print(a, b)
